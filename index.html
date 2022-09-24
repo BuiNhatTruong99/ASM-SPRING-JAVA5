@@ -61,6 +61,93 @@
                                     <div class="categories_title">
                                         <h2 class="categori_toggle">Categories</h2>
                                     </div>
+                                    <input type="checkbox" class="nav-input d-none" id="nav-res-input">
+                                    <label for="nav-res-input" class="checkbtn">
+                                        <i class="fas fa-bars"></i>
+                                    </label>
+                                    <label for="nav-res-input" class="nav-overlay" target=""></label>
+                                    <div class="main_menu_res">
+                                        <nav>
+                                            <ul class="offcanvas_main_menu">
+                                                <div class="canvas_close">
+                                                    <label for="nav-res-input" class="nav-res-close"><i
+                                                            class="fas fa-xmark"></i></label>
+                                                </div>
+                                                <li class="menu-item-has-children"><a class="active"
+                                                        href="index.html">home</a>
+                                                </li>
+                                                <!-- <input type="checkbox" class="nav-input-sub" id="nav-res-sub"> -->
+                                                <li for="nav-res-sub" class="menu-item-has-children"><span
+                                                        class="menu-expand"><i class="fa fa-angle-down"></i></span>
+                                                    <a class="shop-btn" href="#">Shop</a>
+                                                    <ul class="sub_menu shop-show">
+                                                        <li class="menu-item-has-children"><span class="menu-expand"><i
+                                                                    class="fa fa-angle-down"></i></span>
+                                                            <a class="shop-lay-btn" href="#">Shop Layouts</a>
+                                                            <ul class="sub_sub_menu lay-show">
+                                                                <li><a href="shop.html">shop</a></li>
+                                                                <li><a href="shop-fullwidth.html">Full Width</a></li>
+                                                                <li><a href="shop-fullwidth-list.html">Full Width
+                                                                        list</a></li>
+                                                                <li><a href="shop-right-sidebar.html">Right Sidebar </a>
+                                                                </li>
+                                                                <li><a href="shop-right-sidebar-list.html"> Right
+                                                                        Sidebar list</a></li>
+                                                                <li><a href="shop-list.html">List View</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item-has-children"><span class="menu-expand"><i
+                                                                    class="fa fa-angle-down"></i></span>
+                                                            <a class="shop-other-btn" href="#">other Pages</a>
+                                                            <ul class="sub_sub_menu other-show">
+                                                                <li><a href="cart.html">cart</a></li>
+                                                                <li><a href="wishlist.html">Wishlist</a></li>
+                                                                <li><a href="checkout.html">Checkout</a></li>
+                                                                <li><a href="my-account.html">my account</a></li>
+                                                                <li><a href="404.html">Error 404</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item-has-children"><span class="menu-expand"><i
+                                                                    class="fa fa-angle-down"></i></span>
+                                                            <a class="shop-pro-btn" href="#">Product Types</a>
+                                                            <ul class="sub_sub_menu pro-show">
+                                                                <li><a href="product-details.html">product details</a>
+                                                                </li>
+                                                                <li><a href="product-sidebar.html">product sidebar</a>
+                                                                </li>
+                                                                <li><a href="product-grouped.html">product grouped</a>
+                                                                </li>
+                                                                <li><a href="variable-product.html">product variable</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item-has-children"><a class="blog-btn"
+                                                        href="#">blog<span class="menu-expand"><i
+                                                                class="fa fa-angle-down"></i></span></a>
+                                                    <ul class="sub_menu pages blog-show">
+                                                        <li><a href="#">blog details</a></li>
+                                                        <li><a href="#">blog fullwidth</a></li>
+                                                        <li><a href="#">blog sidebar</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item-has-children"><a class="pages-btn"
+                                                        href="#">pages<span class="menu-expand"><i
+                                                                class="fa fa-angle-down"></i></span></a>
+                                                    <ul class="sub_menu pages pages-show">
+                                                        <li><a href="#">About Us</a></li>
+                                                        <li><a href="#">services</a></li>
+                                                        <li><a href="#">Frequently Questions</a></li>
+                                                        <li><a href="#">contact</a></li>
+                                                        <li><a href="#">login</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item-has-children"><a href="contact.html"> Contact
+                                                        Us</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -492,55 +579,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-    <script>
-        $('.slider').owlCarousel({
-            loop: true,
-            margin: 0,
-            nav: true,
-            autoplay: true,
-            autoplayTimeout: 4000,
-            animateOut: 'fadeOut',
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 1
-                },
-                1000: {
-                    items: 1
-                }
-            }
-        })
-        $('.owl-loaded').owlCarousel({
-            loop: true,
-            margin: 10,
-            dots: false,
-            nav: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 3
-                },
-                1000: {
-                    items: 3
-                }
-            }
-        })        
-    </script>
-    <script>
-        $(document).ready(function () {
-            $(window).scroll(function () {
-                if ($(this).scrollTop()) {
-                    $('.sticky-header').addClass('sticky');
-                } else {
-                    $('.sticky-header').removeClass('sticky');
-                }
-            })
-        })
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
