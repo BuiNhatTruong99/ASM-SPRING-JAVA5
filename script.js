@@ -45,6 +45,7 @@ $(document).ready(function () {
         }
     })
 })
+
 $('.shop-btn').click(function () {
     $('nav .offcanvas_main_menu .shop-show').toggleClass("show");
 })
@@ -62,4 +63,8 @@ $('.shop-other-btn').click(function () {
 })
 $('.shop-pro-btn').click(function () {
     $('nav .offcanvas_main_menu .pro-show').toggleClass("show");
+})
+
+$('.mini_cart_wrapper').click(function () {
+    $('.mini_cart').toggleClass("active");
 })
